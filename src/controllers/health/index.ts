@@ -50,6 +50,7 @@ export class HealthController extends Controller {
           })
         ),
     }
+
     if (status !== serviceState.UP) throw new ServiceUnavailable(503, response)
     return response
   }
